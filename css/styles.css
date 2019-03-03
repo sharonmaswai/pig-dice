@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  color: pink;
+}
+h1 {
+  font-family:  #Walter+Turncoat;
+  text-align: center;
+}
+.points1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  background-color: #FA8072;
+  opacity: 0.8;
+
+}
+.points2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  background-color: #FA8072;
+  opacity: 0.8;
+
+}
+h1 {
+  font-family:
+}
