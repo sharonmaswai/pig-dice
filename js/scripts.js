@@ -36,8 +36,19 @@ $(document).ready(function() {
     var turn=rolldice();
     if (turn===1) {
       piggy.turnScore=0;
-      getElementById('id').text(value);
+      lose();
+      changeturn();
 
+    } else {
+      piggy.turnScore+=turn;
+      if(piggy.currentPlayer===1) {
+        if (piggy.turnScore+piggy.score1>=100) {
+          declareWinner(1);
+        }
+
+      }else if (piggy.turnScore+piggy.score2>=100) {
+        declareWinner(2);
+      }
     }
   }
   function changePlayer () {
