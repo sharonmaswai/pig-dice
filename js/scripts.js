@@ -21,8 +21,8 @@ $(document).ready(function() {
   var piggy= {
     score1: 0,
     score2: 0,
-    dice1: 1,
-    turnScore: 0,  
+    currentPlayer: 1,
+    turnScore: 0,
   };
 
   function(player1, player2) {
@@ -35,10 +35,19 @@ $(document).ready(function() {
   var playerTurn= function() {
     var turn=rolldice();
     if (turn===1) {
-      piggy.
+      piggy.turnScore=0;
+      getElementById('id').text(value);
+
     }
   }
+  function changePlayer () {
+   if (pigGame.currentPlayer === 1) {
 
+
+   } else {
+
+   }
+  }
 
 
   //players object
