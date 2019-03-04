@@ -55,7 +55,10 @@ $(document).ready(function() {
     piggy.turnScore: 0,
   }
    function lose() {
-     
+     document.getElementById('id').innerHTML= "Ooops, you rolled 1, you have scored 0 points, your turn is up!!!"
+   }
+   function declareWinner() {
+     document.getElementById("id").innerHTML= "You have won, Yaaay!!!!"
    }
 
 
