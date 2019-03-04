@@ -48,6 +48,15 @@ $(document).ready(function() {
 
    }
   }
+  function refresh () {
+    piggy.score1: 0,
+    piggy.score2: 0,
+    piggy.currentPlayer: 1,
+    piggy.turnScore: 0,
+  }
+   function lose() {
+     
+   }
 
 
   //players object
