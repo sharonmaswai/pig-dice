@@ -25,14 +25,7 @@
             <img src="https://dumielauxepices.net/sites/default/files/pig-clipart-outline-716041-609378.jpg" alt="" width="150">
             <img src="https://dumielauxepices.net/sites/default/files/pig-clipart-outline-716041-609378.jpg" alt="" width="150">
 
-            <h2 id="dets">Players</h2>
 
-            <div id="names">
-
-              <input type="text" name="" value="" placeholder="Name of player.">
-              <button type="button" name="button">Submit</button>
-
-            </div>
 
             <h2 id="inst">Instructions</h2>
             <div id="instructions">
@@ -44,7 +37,7 @@
 
 
           <button class="button" id="play">PLAY</button>
-          <button type="button" name="button" id="back">BACK</button>
+          <button type="button" class="button" name="button" id="back">BACK</button>
         <div class="col-md-1">
 
         </div>
@@ -62,24 +55,31 @@
 
           <div class="col-md-5">
             <div class="player1">
-             <h2>Player 1</h2>
-             <div class="points1">
+              <h2>PLAYER 1</h2>
+              <h3>Your score: <span id="currentScore"></span> </h3>
+              <h3>Roll Score: <span id="rollScore"></span> </h3>
 
-             </div>
 
             </div>
+            <button type="button" name="button" id="holdOne" onclick="">HOLD</button>
+            <button type="button" name="button" id="throwOne" onclick="">THROW</button>
 
 
           </div>
 
           <div class="col-md-5">
             <div class="player2">
-              <h2>Player 2</h2>
-              <div class="points2">
+              <h2>PLAYER 2</h2>
+              <h3>Your score: <span id="currentScore"></span> </h3>
+              <h3>Roll Score: <span id="rollScore"></span> </h3>
 
-              </div>
+
+
 
             </div>
+            <button type="button" class="button" onclick="">HOLD</button>
+            <button type="button" class="button"  onclick="">THROW</button>
+
           </div>
           <div class="col-md-1">
 

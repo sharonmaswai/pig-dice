@@ -17,6 +17,22 @@ $(document).ready(function() {
     ("#names").show();
 
   });
+  $(".rollPig").click(function() {
+   pigResult = playerRoll();
+   $(".rollResult").text(pigResult);
+   $(".turnScore").text(pigGame.turnScore);
+
+ });
+
+ $(".holdPig").click(function(){
+   holdThePig();
+   $("rollResult").text("");
+   $(".player1Score").text(pigGame.player1Score);
+   $(".player2Score").text(pigGame.player2Score);
+   $(".playerStatus").text(pigGame.playerUp);
+ });
+});
+
   //Business logic
   var piggy= {
     score1: 0,
@@ -78,5 +94,3 @@ $(document).ready(function() {
   //score object
   //hold function
   //roll function
-
-});
