@@ -2,27 +2,56 @@ const firstPlayer=[];
 function throwDice() {
   var diceSide=Math.floor((Math.random()*6)+1);
   var addsides=firstPlayer.push(diceSide);
+  document.getElementById('sidevalue').innerHTML=firstPlayer;
+  if (diceSide==1) {
+    firstPlayer=0;
+    lose();
+  }
+   else {
+ }
+}
+
+//player 1 hold
+function holdOne() {
+ firstPlayer.reduce(add);
+ function sum(accumulator, a) {
+  return accumulator+a;
+ }
+ document.getElementById('currentScore').innerHTML=firstPlayer;
+ if(firstPlayer=>100) {
+  document.getElementById('id').innerHTML="You have won this round!!!!"
+ } else {
+
+ }
+}
+
+const secondPlayer=[];
+function throwDice() {
+  var diceSide=Math.floor((Math.random()*6)+1);
+  var addsides=secondPlayer.push(diceSide);
   document.getElementById('id').innerHTML=firstPlayer;
   if (diceSide==1) {
     firstPlayer=0;
     lose();
   }
    else {
+ }
 }
-
 //player 1 hold
 function holdOne() {
 firstPlayer.reduce(add);
 function sum(accumulator, a) {
   return accumulator+a;
-}
-document.getElementById('id').innerHTML=firstPlayer;
-if(firstPlayer=>100) {
-  document.getElementById('id').innerHTML="Player 1 has won!!!!"
-} else {
+ }
+ document.getElementById('id').innerHTML=secondPlayer;
+ if(secondPlayer=>100) {
+  document.getElementById('id').innerHTML="You have won this round!!!!"
+ } else {
 
+ }
 }
-}
+
+
 
 
 
