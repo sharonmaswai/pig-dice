@@ -19,7 +19,7 @@ function holdOne() {
  }
  document.getElementById('currentScore').innerHTML=firstPlayer;
  if(firstPlayer=>100) {
-  document.getElementById('id').innerHTML="You have won this round!!!!"
+  document.getElementById('alert').innerHTML="You have won this round!!!!"
  } else {
 
  }
@@ -37,15 +37,15 @@ function throwDice() {
    else {
  }
 }
-//player 1 hold
-function holdOne() {
+//player 2 hold
+function holdTwo() {
 firstPlayer.reduce(add);
 function sum(accumulator, a) {
   return accumulator+a;
  }
  document.getElementById('currentScore0').innerHTML=secondPlayer;
  if(secondPlayer=>100) {
-  document.getElementById('id').innerHTML="You have won this round!!!!"
+  document.getElementById('alert0').innerHTML="You have won this round!!!!"
  } else {
 
  }
