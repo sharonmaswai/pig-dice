@@ -18,9 +18,9 @@ $(document).ready(function() {
 
   });
   $(".rollPig").click(function() {
-   pigResult = playerRoll();
-   $(".rollResult").text(pigResult);
-   $(".turnScore").text(pigGame.turnScore);
+   rollScore = playerRoll();
+   $(".currentResult").text(rollScore);
+   $(".currentScore").text(pigGame.currentScore);
 
  });
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
     score1: 0,
     score2: 0,
     currentPlayer: 1,
-    turnScore: 0,
+    currentScore: 0,
   };
 
   function(player1, player2) {
