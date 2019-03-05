@@ -83,21 +83,7 @@ $(document).ready(function() {
     ("#names").show();
 
   });
-  $(".rollPig").click(function() {
-   rollScore = playerTurn();
-   $(".currentResult").text(rollScore);
-   $(".currentScore").text(piggy.currentScore);
-
- });
-
- $(".holdPig").click(function(){
-   holdThePig();
-   $("rollScore").text("");
-   $(".Score1").text(piggy.Score1);
-   $(".Score2").text(piggy.Score2);
-   $(".playerStatus").text(piggy.currentPlayer);
- });
- event.preventDefault
+  
 
 
 
