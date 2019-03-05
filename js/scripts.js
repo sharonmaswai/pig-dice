@@ -18,18 +18,18 @@ $(document).ready(function() {
 
   });
   $(".rollPig").click(function() {
-   rollScore = playerRoll();
+   rollScore = playerTurn();
    $(".currentResult").text(rollScore);
-   $(".currentScore").text(pigGame.currentScore);
+   $(".currentScore").text(piggy.currentScore);
 
  });
 
  $(".holdPig").click(function(){
    holdThePig();
-   $("rollResult").text("");
-   $(".player1Score").text(pigGame.player1Score);
-   $(".player2Score").text(pigGame.player2Score);
-   $(".playerStatus").text(pigGame.playerUp);
+   $("rollScore").text("");
+   $(".Score1").text(piggy.Score1);
+   $(".Score2").text(piggy.Score2);
+   $(".playerStatus").text(piggy.currentPlayer);
  });
 });
 
@@ -41,10 +41,7 @@ $(document).ready(function() {
     currentScore: 0,
   };
 
-  function(player1, player2) {
-    this.player1= player1;
-    this.player2=player2;
-  }
+
   function rolldice () {
     die1=Math.floor(Math.Random()*6)+1;
   }
