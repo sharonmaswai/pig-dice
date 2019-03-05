@@ -67,13 +67,13 @@ function sum(accumulator, a) {
 $(document).ready(function() {
   $("button#play").click(function() {
     $("#game").show();
-    $("p#instruction").hide();
+    $("p").hide();
   });
 
 
 
-  $("button#inst").click(function() {
-  $("p#instruction").show();
+  $("button#instructions").click(function() {
+  $("p").show();
   });
 
 

@@ -4,31 +4,34 @@ body {
   margin-bottom: 150px;
 }
 h1 {
-  font-family:  #Walter+Turncoat;
+  font-family: Schoolbell;
   text-align: center;
   font-size: 65px;
 }
 
 
 }
-#instructions {
+.instructions {
   display: none;
 }
 
 #names {
   display: none;
 }
-#inst {
+#instructions {
   background-color: : pink;
   border-radius: 50%;
   color: black;
   font-weight: bold;
 }
 
-
+.space {
+  margin-bottom: 200px;
+}
 
 #game {
   display: none;
+
 }
 h1 {
   font-family: fantasy;
