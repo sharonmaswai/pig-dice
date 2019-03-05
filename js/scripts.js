@@ -2,7 +2,7 @@ const firstPlayer=[];
 function throwDice() {
   var diceSide=Math.floor((Math.random()*6)+1);
   var addsides=firstPlayer.push(diceSide);
-  document.getElementById('sidevalue').innerHTML=firstPlayer;
+  document.getElementById('rollScore').innerHTML=firstPlayer;
   if (diceSide==1) {
     firstPlayer=0;
     lose();
@@ -29,7 +29,7 @@ const secondPlayer=[];
 function throwDice() {
   var diceSide=Math.floor((Math.random()*6)+1);
   var addsides=secondPlayer.push(diceSide);
-  document.getElementById('id').innerHTML=firstPlayer;
+  document.getElementById('rollScore0').innerHTML=firstPlayer;
   if (diceSide==1) {
     firstPlayer=0;
     lose();
@@ -43,7 +43,7 @@ firstPlayer.reduce(add);
 function sum(accumulator, a) {
   return accumulator+a;
  }
- document.getElementById('id').innerHTML=secondPlayer;
+ document.getElementById('currentScore0').innerHTML=secondPlayer;
  if(secondPlayer=>100) {
   document.getElementById('id').innerHTML="You have won this round!!!!"
  } else {
