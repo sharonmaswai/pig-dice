@@ -67,23 +67,17 @@ function sum(accumulator, a) {
 $(document).ready(function() {
   $("button#play").click(function() {
     $("#game").show();
-    $("#hide").hide();
+    $("p#instruction").hide();
   });
 
-  $("button#back").click(function() {
-    $("#game").hide();
-    $("#hide").show();
+
+
+  $("button#inst").click(function() {
+  $("p#instruction").show();
   });
 
-  $("h2#inst").click(function() {
-  $("#instruction").show();
-  });
 
-  $("h2#dets").click(function() {
-    ("#names").show();
 
-  });
-  
 
 
 

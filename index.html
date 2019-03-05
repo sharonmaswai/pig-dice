@@ -27,16 +27,16 @@
 
 
 
-          <button type="button" name="button" id="inst">INSTRUCTIONS</button>
-            <div id="instructions">
-              <p>Pig dice is a game of chance two players try to get to <strong>100 points</strong> by rolling a dice and get points matching that on the face of the dice.<br> A player can roll the dice as  many times as it takes to get to 100 points, however, if the player rolls the dice and it lands on <strong>one</strong> then they lose the points accumulated so far and the other player can then play.<br> To be safe the players can hold to save the points accumulated so far, this means that the other player can then play.<br>The first plater to reach 100 points wins the game.</p>
-            </div>
+          <button type="button" name="button" id="inst" onclick="">INSTRUCTIONS</button>
+
+              <p id="instructions">Pig dice is a game of chance two players try to get to <strong>100 points</strong> by rolling a dice and get points matching that on the face of the dice.<br> A player can roll the dice as  many times as it takes to get to 100 points, however, if the player rolls the dice and it lands on <strong>one</strong> then they lose the points accumulated so far and the other player can then play.<br> To be safe the players can hold to save the points accumulated so far, this means that the other player can then play.<br>The first plater to reach 100 points wins the game.</p>
 
 
 
 
 
-          <button class="button" id="play">PLAY</button>
+
+          <button class="button" id="play" onclick="">PLAY</button>
 
         <div class="col-md-1">
 
@@ -49,43 +49,47 @@
 
       <div class="row">
         <div id="game">
-          <div class="col-md-1">
+          <div class="col-md-2">
 
           </div>
 
-          <div class="col-md-5">
+          <div class="col-md-4">
             <div class="player1">
               <h2>PLAYER 1</h2>
               <h3>Your current score: <span id="currentScore"></span> </h3>
               <h3>Roll Score: <span id="rollScore"></span> </h3>
+
+
               <div class="alert">
 
               </div>
+              <button type="button" name="button" id="holdOne0" onclick="">HOLD</button>
+              <button type="button" name="button" id="throwOne0" onclick="">THROW</button>
 
             </div>
-            <button type="button" name="button" id="holdOne" onclick="">HOLD</button>
-            <button type="button" name="button" id="throwOne" onclick="">THROW</button>
 
 
           </div>
 
-          <div class="col-md-5">
+          <div class="col-md-4">
             <div class="player2">
               <h2>PLAYER 2</h2>
-              <h3>Your current score: <span id="currentScore0"></span> </h3>
-              <h3>Roll Score: <span id="rollScore0"></span> </h3>
+              <h3>Your current score: <span id="currentScore"></span> </h3>
+              <h3>Roll Score: <span id="rollScore"></span> </h3>
 
-             <div class="alert0">
 
-             </div>
+              <div class="alert0">
+
+              </div>
+              <button type="button" name="button" id="holdOne" onclick="">HOLD</button>
+              <button type="button" name="button" id="throwOne" onclick="">THROW</button>
 
 
             </div>
-            <button type="button" class="button" onclick="">HOLD</button>
-            <button type="button" class="button"  onclick="">THROW</button>
+
 
           </div>
-          <div class="col-md-1">
+          <div class="col-md-2">
 
           </div>
         </div>
